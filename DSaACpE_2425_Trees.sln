@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSaACpE_2425_Trees", "DSaACpE_2425_Trees\DSaACpE_2425_Trees.csproj", "{CBEDD7D3-56B4-47EF-8987-0815360B4539}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBEDD7D3-56B4-47EF-8987-0815360B4539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBEDD7D3-56B4-47EF-8987-0815360B4539}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBEDD7D3-56B4-47EF-8987-0815360B4539}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBEDD7D3-56B4-47EF-8987-0815360B4539}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC840A81-0F19-4277-9420-2AA0627460A6}
+	EndGlobalSection
+EndGlobal
