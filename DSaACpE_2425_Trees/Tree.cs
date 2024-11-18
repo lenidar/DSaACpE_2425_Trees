@@ -13,7 +13,7 @@ namespace DSaACpE_2425_Trees
         public Tree(int value) 
         {
             root = new Node(value, true);
-            Console.WriteLine($"Successfully created tree with root node {value}");
+            Console.WriteLine($"Successfully created tree with root node {value}. Current Tree height is {root.getHeight()}. Current Balance Factor is {root.getBalanceFactor()}.");
         }
 
         public void AddValueToTree(int value)
@@ -21,6 +21,7 @@ namespace DSaACpE_2425_Trees
             Console.ReadKey();
             Console.WriteLine();
             root.AddChild(value);
+            Console.WriteLine($"Current height of tree is {root.getHeight()}");
         }
 
         public int getNodeCount()
@@ -33,14 +34,59 @@ namespace DSaACpE_2425_Trees
             return root.Prefix();
         }
 
+        public string Prefix()
+        {
+            List<int> temp = new List<int>();
+            string thing = "";
+
+            temp = root._Prefix(temp);
+
+            foreach(int t in temp)
+            {
+                thing += t + ", ";
+            }
+
+            return thing;
+        }
+
         public string InFixTraverse()
         {
             return root.Infix();
         }
 
+        public string Infix()
+        {
+            List<int> temp = new List<int>();
+            string thing = "";
+
+            temp = root._Infix(temp);
+
+            foreach (int t in temp)
+            {
+                thing += t + ", ";
+            }
+
+            return thing;
+        }
+
         public string PostFixTraverse()
         {
             return root.Postfix();
+        }
+        
+        public string Postfix()
+        {
+            List<int> temp = new List<int>();
+            string thing = "";
+
+            temp = root._Postfix(temp);
+
+            foreach (int t in temp)
+            {
+                thing += t + ", ";
+            }
+
+            return thing;
         }
     }
 }
